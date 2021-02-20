@@ -4,7 +4,7 @@ J'ai créer cette todolist suite à l'apprentissage des framework en formation.
 Nous avons travaillé à partir de Lumen, j'ai voulu reprendre ce framework pour m'entraîner.
 
 
-## Objectfifs
+## Objectifs
 
 - Utiliser le framework Lumen
 - Créer une todolist simple (titre, catégorie, description, une image) et sympa
