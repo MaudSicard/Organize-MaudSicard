@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Organizer</title>
+</head>
+
+<body style="background-image: url(assets/css/sea.jpg); height:300vw; background-attachment: fixed;">
+
+  <header>
+    <div class="column is-full">
+     <h1 class=" title is-1 is-spaced is-$grey-darker has-text-black has-text-centered has-text-weight-semibold">Personal Organizer</h1>
+    </div>
+
+    <div class="column is-full">
+      <h3 class=" subtitle is-3 has-text-black has-text-centered has-text-weight-semibold">a tool to save time and stay zen</h3>
+    </div>
+
+    <nav class="column is-full has-text-black has-text-centered mb-4" >
+      <button id="allCards" class="button is-info is-light has-text-weight-semibold is-hovered is-focused"><a>All cards</a></button>
+      <select id="allCategories" class="button is-info is-light has-text-weight-semibold is-hovered is-focused" type="text" value="" name="categoryId">
+        <option>All Categories</option>
+        <option value= "1">Projet professionnel</option>
+        <option value= "4">Sport</option>
+        <option value= "3">Quotidien</option>
+        <option value= "5">Musique</option>
+        <option value= "2">Projet personnel</option>
+        <option value= "6">Archive</option>
+      </select>
+    </nav> 
+  </header>
+
+  <main class="mt-5">
+    <form id="addCard" class="mb-6">
+      <div class="columns is-flex-row is-justify-content-center">
+        <div class="column is-4">
+          <label class= "is-size-5 has-text-black has-text-weight-semibold" >Name card</label>
+          <input id="name" class="input is-link" type="text" value="" name="name">
+        </div>
+
+        <div class="column is-4">
+          <label class= "is-size-5 has-text-black has-text-weight-semibold" >Short description card</label>
+          <input id="description" class="input is-link" type="text" value="" name="description">
+        </div>
+      </div>
+      
+      <div class="columns is-flex-row is-justify-content-center">
+        <div class="column is-4">
+          <label class= "is-size-5 has-text-black has-text-weight-semibold">Category</label>
+          <select id="category" class="input is-link " type="text" value="" name="category_id">
+            <option value= "0">Choose a category</option>
+              <option value= "1">Projet professionnel</option>
+              <option value= "4">Sport</option>
+              <option value= "3">Quotidien</option>
+              <option value= "5">Musique</option>
+              <option value= "2">Projet personnel</option>
+          </select>
+        </div>
+
+        <div class="column is-2">
+          <label class= "is-size-5 has-text-black has-text-weight-semibold">Number(1-121)</label>
+          <input id="numberImage" class="input is-link" type="text" value="" name="img_number">
+        </div>
+        
+        <div class="column buttons is-2 are-medium is-align-self-flex-end">
+          <button class="button is-success is-light has-text-black has-text-weight-semibold" type="submit">Add</button>
+        </div>
+      </div>
+    </form>
+ 
+    <div id="container_cards" class=" mt-6 columns is-multiline is-justify-content-center">
+    <template id="template">
+      <div class="card column is-3 m-2">
+        <div class="card-image column">
+          <figure class="image is-1by1">
+            <img alt="animal picture" src="http://placekitten.com/g/200/300" data-img="">
+          </figure>
+        </div>
+       <form class="field control">
+         <input class="title is-5 has-text-dark has-text-centered input" name="name" data-id="" value="">
+         <label class= "is-size-6 has-text-black has-text-weight-semibold">Category: </label>
+         <select class="subtitle category_id is-6 input" name="category_id">
+            <option id= "option" value=""></option>
+            <option value= "1">Projet professionnel</option>
+              <option value= "4">Sport</option>
+              <option value= "3">Quotidien</option>
+              <option value= "5">Musique</option>
+              <option value= "2">Projet personnel</option>
+            <option value="6">Archive</option>
+          </select>
+          <label class= "is-size-6 has-text-black has-text-weight-semibold">Short description : </label>
+          <input class="has-text-dark input description" name="description" value="" >
+          <button class="button mt-1" type="submit">Modifier</button>
+        </form>
+      </div>
+     </template>
+     </div>
+  </main>
+
+  <footer class="has-text-centered has-text-black mt-6">
+      <p>Maud Sicard - février 2021</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
