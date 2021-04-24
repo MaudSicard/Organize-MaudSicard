@@ -24,7 +24,7 @@ HTML, CSS (Bulma), JS, Ajax, PHP, Lumen, mySQL
 ## Difficultés rencontrées et améliorations
 
 - Ajout de fonction notamment la fonction delete pour supprimer un élément de la base. Sur le principe, j'ai préféré ne pas ajouter cette fonction de manière à laisser une trace de toutes les cartes en base
-- Envoyer un message à l'utilisateur s'il ne remplit pas correctement le formulaire d'ajout pour mieux le guider (ici juste un message si l'ajout en base n'a pas été effectué)
+- Envoyer un message à l'utilisateur s'il ne remplit pas correctement le formulaire d'ajout pour mieux le guider ou pour lui dire que la carte a bien été ajoutée
 - Factoriser encore le JS
 - Ajouter d'autres fonctionnalités pour l'utilisateur par exemple l'image des cartes, en travaillant avec d'autres API ou en créant une fonction pour télécharger une image
 - Complexifier les cartes en ajoutant des éléments de date, ,...  
